@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="respostaDesafio"
+            type="tads.eaj.ufrn.eusoudaltonico_app.ui.model.Desafio" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -87,6 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="100dp"
             app:layout_constraintBottom_toBottomOf="@+id/buttonDesafio1"
+            android:text="@={respostaDesafio.resposta1}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/buttonDesafio1"
@@ -99,6 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="100dp"
             app:layout_constraintBottom_toBottomOf="@+id/buttonDesafio2"
+            android:text="@={respostaDesafio.resposta2}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/buttonDesafio2"
@@ -111,6 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="100dp"
             app:layout_constraintBottom_toBottomOf="@+id/buttonDesafio3"
+            android:text="@={respostaDesafio.resposta3}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/buttonDesafio3"
@@ -121,6 +126,7 @@
             android:id="@+id/textViewResultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginEnd="100dp"
             app:layout_constraintBottom_toBottomOf="@+id/buttonResultado"
             app:layout_constraintEnd_toEndOf="parent"
