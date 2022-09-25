@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:text="@string/o_que"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/tamb_m_conhecido_como_cegueira_parcial_para_cores_uma_anomalia_ligada_ao_sexo_causada_por_um_gene_localizado_no_cromossomo_x"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:text="@string/fa_a_o_teste"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/buttonDesafio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/desafio_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/buttonDesafio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/desafio_2"
+            app:layout_constraintStart_toStartOf="@+id/buttonDesafio1"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDesafio1" />
+
+        <Button
+            android:id="@+id/buttonDesafio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/desafio_3"
+            app:layout_constraintStart_toStartOf="@+id/buttonDesafio2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDesafio2" />
+
+        <TextView
+            android:id="@+id/textViewDesafio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonDesafio1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonDesafio1"
+            app:layout_constraintTop_toTopOf="@+id/buttonDesafio1"
+            app:layout_constraintVertical_bias="0.586" />
+
+        <TextView
+            android:id="@+id/textViewDesafio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonDesafio2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonDesafio2"
+            app:layout_constraintTop_toTopOf="@+id/buttonDesafio2"
+            app:layout_constraintVertical_bias="0.448" />
+
+        <TextView
+            android:id="@+id/textViewDesafio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonDesafio3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonDesafio3"
+            app:layout_constraintTop_toTopOf="@+id/buttonDesafio3"
+            app:layout_constraintVertical_bias="0.31" />
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonResultado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonResultado"
+            app:layout_constraintTop_toTopOf="@+id/buttonResultado"
+            app:layout_constraintVertical_bias="0.551" />
+
+        <Button
+            android:id="@+id/buttonResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="@string/resultado"
+            app:layout_constraintStart_toStartOf="@+id/buttonDesafio3"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDesafio3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
