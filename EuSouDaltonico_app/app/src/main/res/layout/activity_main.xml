@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="respostaDesafio"
             type="tads.eaj.ufrn.eusoudaltonico_app.ui.model.Desafio" />

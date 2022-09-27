@@ -3,7 +3,6 @@ package tads.eaj.ufrn.eusoudaltonico_app.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.databinding.DataBindingUtil
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK) {
                 respostaDesafio.resposta1 = result.data!!.getStringExtra("RESULTADO").toString()
-            }else{
+            } else {
                 Toast.makeText(this, "Desafio cancelado", Toast.LENGTH_SHORT).show()
             }
         }
@@ -28,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK) {
                 respostaDesafio.resposta2 = result.data!!.getStringExtra("RESULTADO").toString()
-            }else{
+            } else {
                 Toast.makeText(this, "Desafio cancelado", Toast.LENGTH_SHORT).show()
             }
         }
@@ -36,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK) {
                 respostaDesafio.resposta3 = result.data!!.getStringExtra("RESULTADO").toString()
-            }else{
+            } else {
                 Toast.makeText(this, "Desafio cancelado", Toast.LENGTH_SHORT).show()
             }
         }
@@ -62,10 +61,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.buttonResultado.setOnClickListener {
             val resultadoFinal = respostaDesafio.resultadoDoTeste()
-            if (resultadoFinal.equals("Você deixou algum desafio em branco")){
+            if (resultadoFinal.equals("Você deixou algum desafio em branco")) {
                 Toast.makeText(this, respostaDesafio.resultadoDoTeste(), Toast.LENGTH_SHORT).show()
                 binding.textViewResultado.text = ""
-            }else{
+            } else {
                 binding.textViewResultado.text = respostaDesafio.resultadoDoTeste()
             }
 

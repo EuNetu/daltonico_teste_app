@@ -3,7 +3,6 @@ package tads.eaj.ufrn.eusoudaltonico_app.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.databinding.DataBindingUtil
 import tads.eaj.ufrn.eusoudaltonico_app.R
 import tads.eaj.ufrn.eusoudaltonico_app.databinding.ActivityDesafioBinding
