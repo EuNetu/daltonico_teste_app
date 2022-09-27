@@ -10,7 +10,7 @@ class Desafio (
             return "Você deixou algum desafio em branco"
         }
         if(this.resposta1.equals("10") && this.resposta2.equals("57") && this.resposta3.equals("7")){
-            return "Sua visão ta show"
+            return "Você não é daltônico"
         }
         return "Vá a um oftalmologista"
     }

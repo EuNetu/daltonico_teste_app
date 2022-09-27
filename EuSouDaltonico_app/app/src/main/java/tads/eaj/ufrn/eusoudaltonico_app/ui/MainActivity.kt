@@ -44,33 +44,35 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        binding.respostaDesafio = respostaDesafio
+
         binding.buttonDesafio1.setOnClickListener {
             intent = Intent(this, DesafioActivity::class.java)
-            val bundle = Bundle()
-            bundle.putInt("IMAGEM", R.drawable.dezdaltonismo)
-            intent.putExtras(bundle)
+            intent.putExtra("IMAGEM", R.drawable.dezdaltonismo)
             dasafioOneLauncher.launch(intent)
         }
         binding.buttonDesafio2.setOnClickListener {
             intent = Intent(this, DesafioActivity::class.java)
-            val bundle = Bundle()
-            bundle.putInt("IMAGEM", R.drawable.ciquentasetedaltonismo)
-            intent.putExtras(bundle)
+            intent.putExtra("IMAGEM", R.drawable.ciquentasetedaltonismo)
             dasafioTwoLauncher.launch(intent)
         }
         binding.buttonDesafio3.setOnClickListener {
             intent = Intent(this, DesafioActivity::class.java)
-            val bundle = Bundle()
-            bundle.putInt("IMAGEM", R.drawable.setedaltonismo)
-            intent.putExtras(bundle)
+            intent.putExtra("IMAGEM", R.drawable.setedaltonismo)
             dasafioThreeLauncher.launch(intent)
         }
         binding.buttonResultado.setOnClickListener {
-            binding.textViewResultado.text = respostaDesafio.resultadoDoTeste()
+            val resultadoFinal = respostaDesafio.resultadoDoTeste()
+            if (resultadoFinal.equals("Você deixou algum desafio em branco")){
+                Toast.makeText(this, respostaDesafio.resultadoDoTeste(), Toast.LENGTH_SHORT).show()
+                binding.textViewResultado.text = ""
+            }else{
+                binding.textViewResultado.text = respostaDesafio.resultadoDoTeste()
+            }
+
         }
 
     }
+
     override fun onResume() {
         super.onResume()
         binding.respostaDesafio = respostaDesafio

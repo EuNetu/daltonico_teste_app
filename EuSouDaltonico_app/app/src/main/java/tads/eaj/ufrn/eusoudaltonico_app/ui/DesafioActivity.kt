@@ -18,9 +18,7 @@ class DesafioActivity : AppCompatActivity() {
         binding.imageViewDesafio.setImageResource(intent.extras!!.getInt("IMAGEM"))
         binding.buttonOK.setOnClickListener {
             val intent = Intent()
-            val bundle = Bundle()
-            bundle.putString("RESULTADO", binding.editTextResposta.text.toString())
-            intent.putExtras(bundle)
+            intent.putExtra("RESULTADO", binding.editTextResposta.text.toString())
             setResult(RESULT_OK, intent)
             finish()
         }
