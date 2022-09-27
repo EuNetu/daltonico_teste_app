@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">Eu Sou Daltonico?</string>
     <string name="o_que">O que é?</string>
-    <string name="tamb_m_conhecido_como_cegueira_parcial_para_cores_uma_anomalia_ligada_ao_sexo_causada_por_um_gene_localizado_no_cromossomo_x">também conhecido como cegueira parcial para cores, é uma anomalia ligada ao sexo causada por um gene localizado no cromossomo X.</string>
     <string name="fa_a_o_teste">FAÇA O TESTE</string>
     <string name="desafio_1">Desafio 1</string>
     <string name="desafio_2">Desafio 2</string>
     <string name="desafio_3">Desafio 3</string>
     <string name="resultado">RESULTADO</string>
+    <string name="qual_n_mero_voc_v_na_imagem_abaixo">Qual número você vê na imagem abaixo?</string>
+    <string name="digite_o_valor_da_imagem">Digite o valor da imagem</string>
+    <string name="ok">OK</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="daltonismo_uma_perturba_o_da_percep_o_visual_caracterizada_pela_incapacidade_de_diferenciar_todas_ou_algumas_cores">Daltonismo é uma perturbação da percepção visual caracterizada pela incapacidade de diferenciar todas ou algumas cores.</string>
 </resources>
